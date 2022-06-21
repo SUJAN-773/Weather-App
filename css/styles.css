@@ -1,0 +1,233 @@
+body {
+    align-items: center;
+    background-color: rgb(40, 51, 61);
+  }
+  .leftplusright {
+    width: 1000px;
+    height: 550px;
+    background-color: rgb(213, 225, 235);
+    margin: auto;
+    margin-top: 45px;
+    border-radius: 20px;
+  }
+  .leftdiv {
+    position: relative;
+    height: 550px;
+    width: 450px;
+    float: left;
+    border-radius: 10px;
+  }
+  .leftdiv img {
+    width: 450px;
+    height: 550px;
+    border-radius: 20px;
+  }
+  
+  .lefttop {
+    position: absolute;
+    top: 5px;
+    width: 450px;
+  }
+  .lefttop .forecastleft {
+    position: absolute;
+    margin-left: 20px;
+    padding: 3px 10px 3px 10px;
+    border-radius: 5px;
+    color: rgb(199, 39, 116);
+    background-color: #fefdfb88;
+    font-size: 1.6rem;
+  }
+  .lefttop .weatherright {
+    display: inline;
+    float: right;
+    margin-right: 20px;
+    padding: 3px 10px 3px 10px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: #fefdfb88;
+    font-size: 1.6rem;
+  }
+  .formclass {
+    position: absolute;
+    bottom: 180px;
+    margin-left: 70px;
+  }
+  .formclass p {
+    font-weight: bold;
+    font-family: "Jost", sans-serif;
+    color: white;
+    font-size: large;
+    padding: 2px;
+    border-radius: 2px;
+  }
+  .formclass hr {
+    height: 1px;
+    background-color: white;
+  }
+  .formclass input {
+    background-color: rgba(240, 248, 255, 0.57);
+    box-shadow: -1px 2px 1px white;
+    width: 250px;
+    height: 20px;
+    border: 0ch;
+  }
+  .formclass button {
+    background-color: #f28b30;
+    border: 0;
+    height: 22px;
+    border-radius: 3px;
+    box-shadow: -1px 1px 1px white;
+  }
+  i {
+    color: white;
+  }
+  
+  .rightdiv {
+    width: 550px;
+    height: 550px;
+    float: right;
+  }
+  .nodataclass {
+    display: none;
+    text-align: center;
+    font-weight: bold;
+  }
+  .nodataclass h1 {
+    color: rgba(47, 46, 46, 0.488);
+    font-size: 5rem;
+  }
+  .nodataclass p {
+    color: rgba(47, 46, 46, 0.764);
+    font-size: 2.4rem;
+  }
+  .yesdataclass {
+    width: 500px;
+    height: 530px;
+  }
+  .yesdataclass h1 {
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    font-size: 2.5rem;
+  }
+  .todayforecast {
+    width: 500px;
+    height: 180px;
+    margin-left: 20px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    box-shadow: -1px 3px 1px rgba(60, 60, 60, 0.263);
+  }
+  .todayforecast img {    
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: -25px;
+    margin-top: 70px;
+    background-color: rgba(83, 148, 213, 0.362);
+    box-shadow: 0 0 7px;
+  }
+  .todayforecast p {
+    margin-left: 15px;
+    font-weight: bold;
+  }
+  .todayforecastleft {
+    float: left;
+    width: 180px;
+    height: 180px;
+    margin-left: 40px;
+  }
+  .todaytemp {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: rgb(207, 69, 92);
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .weathercondition{
+    font-size: 1.3rem;
+    margin-top: 10px;
+  }
+  .Description {
+    color: rgba(47, 46, 46, 0.634);
+    font-size: 1.3rem;
+    margin-top: 10px;
+  }
+  .date{
+    font-size: 1.2rem;
+    margin-top: 10px;    
+  }
+  .yesdataclass p {
+    margin-left: 20px;
+    font-weight: bold;
+    margin-bottom: 2px;
+  }
+  .moreonloc {
+    font-size: 1.5rem;
+  }
+  .todayforecastright {
+    float: right;
+    margin-right: 70px;
+    box-shadow: -1px 0px rgba(47, 46, 46, 0.634);
+    height: 150px;
+    margin-top: 15px;
+  }
+  .todayforecastright p {
+    margin-top: 20px;
+    line-height: 3px;
+    color: rgba(47, 46, 46, 0.634);
+    font-size: 1rem;
+  }
+  .todayforecastright .realfeel {
+    margin-top: 30px;
+  }
+  table {
+    margin-left: 20px;
+    width: 500px;
+  }
+  table td {
+    background-color: white;
+    width: 330px;
+    height: 115px;
+    border-radius: 5px;
+    box-shadow: -1px 3px 1px rgba(60, 60, 60, 0.263);
+  }
+  table td p {
+    width: 150px;
+    margin-left: 30px;
+    line-height: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  table img {
+    width: 50px;
+    height: 50px;
+    margin-left: 130px;
+    margin-bottom: 50px;
+  }
+  table tr td .tdtodaytemp {
+    margin-top: 0;
+    color: rgb(224, 48, 77);
+    font-size: 1.5rem;
+  }
+  .tdleft{
+    float: left;
+  }
+  .tdimage{
+    float: right;
+    height: 50px;
+    width: 50px;
+    margin-right: 15px;
+    margin-top: 30px;
+  }
+  .tdimage img{
+    margin: 0;
+    border-radius: 50%;  
+    background-color: rgba(83, 148, 213, 0.362);
+    box-shadow: 0 0 7px;  
+  }
+  .tdDescription {
+    color: rgba(47, 46, 46, 0.634);
+    line-height: 10px;
+  }
+  

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Weather App</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" href="images/favicon (3).ico">
+    </head>
+    <body>
+        <div id="root">
+            <div class="leftplusright">
+                <div class="leftdiv">
+                    <img src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80" alt="just a simple background ">
+                    <div class="lefttop">
+                        <h1 class="forecastleft">Forecast</h1>
+                        <h1 class="weatherright">Weather</h1>
+                    </div>
+                    <form class="formmain">
+                        <div class="formclass">
+                            <p class="formdes">About the City you need to know</p>
+                            <hr >
+                            <div>
+                                <input class="inputsearch" type="text" name="city" placeholder="Enter a City" required >
+                                <button class="formbutton" type="submit">
+                                    <i class="fa fa-search" ></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="rightdiv">
+                    <div class="nodataclass">
+                        <h1 class="nodataclassh1">No Data Yet</h1>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <p class="nodataclassp">Enter a location to search</p>
+                      </div>
+                      <div class="yesdataclass">
+                        <h1 class="yesdataclassh1">Today</h1>
+                        <div class="todayforecast">
+                          <div class="todayforecastleft">
+                            <p class="todaytemp" style="margin-left: 10px;">29 </p>
+                            <p class="weathercondition" style="margin-left: 10px;">
+                              clouds
+                            </p>                            
+                            <p class="Description" style="margin-left: 10px;">Description</p>
+                            <p class="date" style="margin-left: 10px;">date</p>
+                          </div>
+                          <div class="todayforecastright">
+                            <p class="realfeel">Real Feel: 33 *C</p>
+                            <p class="Humidity">humidity: 14%</p>
+                            <p class="pressure">Pressure: 1000 hPa</p>
+                            <p class="mintemp">Min Temp: 26 *C</p>
+                            <p class="maxtemp">Max temp: 33 *C</p>
+                          </div>
+                          <div class="image">
+                            <img class="weathericon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmc_a7vKGTqgrr3lfWszvPR-f4CJAXwRLxTA&usqp=CAU" alt="weatherIcon" >
+                          </div>
+                        </div>
+                        <p class="moreonloc">More on City</p>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div class="tdleft">
+                                  <p class="tdtodaytemp">29 &deg;C</p> 
+                                  <p class="tdweathercondition">
+                                    Clouds
+                                  </p>
+                                  <p class="tdDescription">Description</p>
+                                  <p class="tddate">date
+                                  </p>
+                                </div>
+                                <div class="tdimage">
+                                  <img class="tdweathericon1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmc_a7vKGTqgrr3lfWszvPR-f4CJAXwRLxTA&usqp=CAU" alt="weatherIcon" >
+                                </div>
+                              </td>
+                              <td>
+                                <div class="tdleft">
+                                  <p class="tdtodaytemp">29 &deg;C</p>
+                                  <p class="tdweathercondition">
+                                  Clouds
+                                  </p>
+                                  <p class="tdDescription">Description</p>
+                                  <p class="tddate">date</p>
+                                </div>
+                                <div class="tdimage">
+                                  <img class="tdweathericon2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmc_a7vKGTqgrr3lfWszvPR-f4CJAXwRLxTA&usqp=CAU" alt="weatherIcon" >
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="tdleft">
+                                  <p class="tdtodaytemp">29 &deg;C</p> 
+                                  <p class="tdweathercondition">
+                                    Clouds
+                                  </p>
+                                  <p class="tdDescription">Description</p>
+                                  <p class="tddate">date
+                                  </p>
+                                </div>
+                                <div class="tdimage">
+                                  <img class="tdweathericon3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmc_a7vKGTqgrr3lfWszvPR-f4CJAXwRLxTA&usqp=CAU" alt="weatherIcon" >
+                                </div>
+                              </td>
+                              <td>
+                                <div class="tdleft">
+                                  <p class="tdtodaytemp">29 &deg;C</p> 
+                                  <p class="tdweathercondition">
+                                    Clouds
+                                  </p>
+                                  <p class="tdDescription">Description</p>
+                                  <p class="tddate">date
+                                  </p>
+                                </div>
+                                <div class="tdimage">
+                                  <img class="tdweathericon4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmc_a7vKGTqgrr3lfWszvPR-f4CJAXwRLxTA&usqp=CAU" alt="weatherIcon" >
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <script src="./index.js"></script>
+    </body>
+</html>
