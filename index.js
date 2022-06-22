@@ -55,7 +55,6 @@ function getLocation() {
 
 function success(position) {
     locpermitted=true;
-    console.log(position);
     const lat=position.coords.latitude;
     const long=position.coords.longitude;
     const URL=`${API_URL}lat=${lat}&lon=${long}&appid=${API_KEY}&units=metric&cnt=10`;   
@@ -76,7 +75,6 @@ async function getWeather(URL){
             alert(data.message);
             throw new Error("No weather Found");
         }
-        console.log(data);
         displayData(data);
     }catch{alert('No Location Found')}
 }
@@ -89,7 +87,7 @@ function displayData(data){
 }
 
 function changeMoreForecast(data){
-    var tdtemp0 = data.list[1].main.temp;
+    var tdtemp0 = Math.round(data.list[1].main.temp);
     document.getElementsByTagName("td")[0].getElementsByTagName("p")[0].innerText=tdtemp0+" °C";
     var tdcondition0=data.list[1].weather[0].description;
     document.getElementsByTagName("td")[0].getElementsByTagName("p")[1].innerText=tdcondition0;
@@ -100,7 +98,7 @@ function changeMoreForecast(data){
     document.querySelector(".tdweathericon1").setAttribute('src', `${ICON_URL}${data.list[1].weather[0].icon}@2x.png`);
 
 
-    var tdtemp1 = data.list[2].main.temp;
+    var tdtemp1 = Math.round(data.list[2].main.temp);
     document.getElementsByTagName("td")[1].getElementsByTagName("p")[0].innerText=tdtemp1+" °C";
     var tdcondition1=data.list[2].weather[0].description;
     document.getElementsByTagName("td")[1].getElementsByTagName("p")[1].innerText=tdcondition1;
@@ -111,7 +109,7 @@ function changeMoreForecast(data){
     document.querySelector(".tdweathericon2").setAttribute('src', `${ICON_URL}${data.list[2].weather[0].icon}@2x.png`);
 
 
-    var tdtemp2 = data.list[3].main.temp;
+    var tdtemp2 = Math.round(data.list[3].main.temp);
     document.getElementsByTagName("td")[2].getElementsByTagName("p")[0].innerText=tdtemp2+" °C";
     var tdcondition2=data.list[3].weather[0].description;
     document.getElementsByTagName("td")[2].getElementsByTagName("p")[1].innerText=tdcondition2;
@@ -122,7 +120,7 @@ function changeMoreForecast(data){
     document.querySelector(".tdweathericon3").setAttribute('src', `${ICON_URL}${data.list[3].weather[0].icon}@2x.png`);
 
 
-    var tdtemp3 = data.list[4].main.temp;
+    var tdtemp3 = Math.round(data.list[4].main.temp);
     document.getElementsByTagName("td")[3].getElementsByTagName("p")[0].innerText=tdtemp3+" °C";
     var tdcondition3=data.list[4].weather[0].description;
     document.getElementsByTagName("td")[3].getElementsByTagName("p")[1].innerText=tdcondition3;
@@ -146,7 +144,6 @@ function changeTodayForecast(data){
     document.getElementsByClassName("todaytemp")[0].innerText=Math.round(todaytemp)+" °C";
     document.getElementsByClassName("weathercondition")[0].innerText=weathercondition;
     document.getElementsByClassName("Description")[0].innerText=Description;
-    //document.getElementsByClassName("yesdataclassh1")[0].innerText="Today at "+cityname;
     document.getElementsByClassName("date")[0].innerText=days[new Date().getDay()]+" "+months[new Date().getMonth()]+", "+new Date().getDate();
     document.querySelector(".weathericon").setAttribute('src', ICON_URL+data.list[0].weather[0].icon+"@2x.png");
     document.getElementsByClassName("realfeel")[0].innerText = "Real Feel: "+Math.round(feelslike)+" °C";
