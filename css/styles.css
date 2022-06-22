@@ -1,6 +1,6 @@
 body {
     align-items: center;
-    background-color: rgb(40, 51, 61);
+    background-color: rgb(33, 39, 44);
   }
   .leftplusright {
     width: 1000px;
@@ -206,6 +206,7 @@ body {
     margin-bottom: 50px;
   }
   table tr td .tdtodaytemp {
+    font-family: 'Joan', sans-serif;
     margin-top: 0;
     color: rgb(224, 48, 77);
     font-size: 1.5rem;
@@ -227,7 +228,9 @@ body {
     box-shadow: 3px 3px 10px;  
   }
   .tdDescription {
+    font-family: 'Joan', serif;
     color: rgba(47, 46, 46, 0.634);
     line-height: 10px;
+    font-size: medium;
   }
   
